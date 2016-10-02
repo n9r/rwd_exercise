@@ -1,6 +1,5 @@
 body {
-  background-color: cornflowerblue;
-  text-align: center; }
+  background-color: cornflowerblue; }
 
 ul, li {
   list-style-type: katakana-iroha;
@@ -28,32 +27,33 @@ li:hover {
   transform: rotate(3deg);
   transition: transform 0.1s, background-color 0.3s; }
 
-.maincointainer {
+.maincontainer {
   background-color: coral;
   width: 100%;
   max-width: 1536px;
-  margin: 0;
   padding: 0;
+  text-align: center;
+  margin: auto;
   font-size: 1.2em; }
-  .maincointainer .sidebar {
+  .maincontainer .sidebar {
     float: left;
     width: 21%;
     max-width: 512px;
     padding: 2%;
     margin: auto;
     text-align: center; }
-  .maincointainer .maincontent {
+  .maincontainer .maincontent {
     background-color: lightgreen;
     width: 71%;
     float: left;
     text-align: justify;
     padding: 2%;
     margin: 0; }
-    .maincointainer .maincontent > p:first-of-type {
+    .maincontainer .maincontent > p:first-of-type {
       font-weight: bolder; }
-      .maincointainer .maincontent > p:first-of-type::first-letter {
+      .maincontainer .maincontent > p:first-of-type::first-letter {
         font-size: 2em; }
-    .maincointainer .maincontent img {
+    .maincontainer .maincontent img {
       float: left;
       width: 50%;
       margin: 0.2em 0.2em 0.2em 0;
@@ -61,10 +61,10 @@ li:hover {
       transition: width 0.3s;
       border: 3px solid burlywood;
       border-radius: 2%; }
-    .maincointainer .maincontent img:hover {
+    .maincontainer .maincontent img:hover {
       transform: rotate(0.5deg);
       transition: transform 0.1s; }
-    .maincointainer .maincontent h1 {
+    .maincontainer .maincontent h1 {
       text-align: center;
       width: 96%;
       margin: auto;
@@ -74,18 +74,18 @@ li:hover {
       border-top: 2px solid cadetblue;
       border-radius: 10%; }
     @media screen and (max-width: 600px), only screen and (max-device-width: 568px) and (orientation: portrait) {
-      .maincointainer .maincontent img {
+      .maincontainer .maincontent img {
         width: 100%;
         transition: width 0.3s; } }
   @media screen and (max-width: 600px), only screen and (max-device-width: 568px) and (orientation: portrait) {
-    .maincointainer .sidebar, .maincointainer .maincontent {
+    .maincontainer .sidebar, .maincontainer .maincontent {
       float: none;
       width: 96%; }
-    .maincointainer .sidebar {
+    .maincontainer .sidebar {
       text-align: center; }
-    .maincointainer h1 {
+    .maincontainer h1 {
       font-size: 1.5em; } }
-  .maincointainer .footer {
+  .maincontainer .footer {
     background-color: cadetblue;
     width: 96%;
     padding: 2%;
@@ -93,7 +93,7 @@ li:hover {
     text-align: center;
     transition: background-color 3s; }
   @media screen and (max-width: 600px), only screen and (max-device-width: 568px) and (orientation: portrait) {
-    .maincointainer .footer {
+    .maincontainer .footer {
       width: 96%;
       background-color: darkcyan;
       transition: background-color 3s; } }

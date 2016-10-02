@@ -1,5 +1,5 @@
 $paddingAll:            2%;
-$maincointainerWidth:   100%;
+$maincontainerWidth:   100%;
 $sidebarWidth:          25% - $paddingAll*2;
 $maincontentWidth:      75% - $paddingAll*2;
 $footerWidth:           $sidebarWidth + $maincontentWidth + $paddingAll*2;
@@ -8,15 +8,14 @@ $breakpoint:            600px;
 
 body {
   background-color: cornflowerblue;
-  text-align: center;
 }
 
 ul, li {
-  list-style-type:    katakana-iroha;
-  margin:             0;
-  padding:            0;
+  list-style-type: katakana-iroha;
+  margin: 0;
+  padding: 0;
   list-style-position:inside;
-  font-weight:        bold;
+  font-weight: bold;
 }
 ul {
   margin-top: 1em;
@@ -41,12 +40,13 @@ li:hover {
   transition: transform 0.1s, background-color 0.3s;
 }
 
-.maincointainer {
+.maincontainer {
   background-color: coral;
-  width: $maincointainerWidth;
+  width: $maincontainerWidth;
   max-width: $maxWidth * 0.75px;
-  margin: 0;
   padding: 0;
+  text-align: center;
+  margin: auto;
   font-size: 1.2em;
 
   .sidebar {
