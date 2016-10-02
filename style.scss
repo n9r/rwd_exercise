@@ -36,8 +36,8 @@ li:nth-child(2n+1) {
 }
 
 li:hover {
-  transform: rotate(5deg);
   background-color: cornflowerblue;
+  transform: rotate(3deg);
   transition: transform 0.1s, background-color 0.3s;
 }
 
@@ -82,6 +82,11 @@ li:hover {
       transition: width 0.3s;
       border: 3px solid burlywood;
       border-radius: 2%;
+    }
+
+    img:hover {
+      transform: rotate(0.5deg);
+      transition: transform 0.1s;
     }
 
     h1 {
