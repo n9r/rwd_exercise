@@ -1,0 +1,125 @@
+$paddingAll:            2%;
+$maincointainerWidth:   100%;
+$sidebarWidth:          25% - $paddingAll*2;
+$maincontentWidth:      75% - $paddingAll*2;
+$footerWidth:           $sidebarWidth + $maincontentWidth + $paddingAll*2;
+$maxWidth:              2048;
+$breakpoint:            600px;
+
+body {
+  background-color: cornflowerblue;
+}
+
+ul, li {
+  list-style-type:    katakana-iroha;
+  margin:             0;
+  padding:            0;
+  list-style-position:inside;
+  font-weight:        bold;
+}
+ul {
+  margin-top: 1em;
+}
+
+li {
+  line-height: 2em;
+}
+
+li:hover {
+  transform: rotate(5deg);
+  background-color: blueviolet;
+  transition: transform 0.1s, background-color 0.3s;
+}
+
+.maincointainer {
+  background-color: coral;
+  width: $maincointainerWidth;
+  max-width: $maxWidth * 0.75px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+
+  .sidebar {
+    float: left;
+    width: $sidebarWidth;
+    max-width: $maxWidth * 0.25px;
+    padding: $paddingAll;
+    margin: 0;
+  }
+
+  .maincontent {
+    background-color: lightgreen;
+    width: $maincontentWidth;
+    float: left;
+    text-align: justify;
+    padding: $paddingAll;
+    margin: 0;
+
+    > p:first-of-type {
+      font-weight: bolder;
+
+      &::first-letter {
+        font-size: 2em;
+      }
+    }
+
+    img {
+      float: left;
+      width: 50%;
+      margin: 0.2em 0.2em 0.2em 0;
+      padding-left: 0;
+      transition: width 0.3s;
+      border: 3px solid burlywood;
+      border-radius: 2%;
+    }
+
+    h1 {
+      text-align: center;
+      width: 96%;
+      margin: auto;
+      padding:  2%;
+      background-color: darkturquoise;
+      border-bottom: 3px solid cadetblue;
+      border-top: 3px solid cadetblue;
+      border-radius: 10%;
+    }
+
+    @media screen and (max-width: $breakpoint), only screen and (max-device-width: 568px) and (orientation: portrait) {
+      img {
+        width: 100%;
+        transition: width 0.3s;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint), only screen and (max-device-width: 568px) and (orientation: portrait) {
+
+    .sidebar, .maincontent {
+      float: none;
+      width: 96%;
+    }
+    .sidebar {
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+    .footer {
+      background-color: cadetblue;
+      width: $footerWidth;
+      padding: $paddingAll;
+      clear: both;
+      text-align: center;
+      transition: background-color 3s;
+    }
+
+  @media screen and (max-width: $breakpoint), only screen and (max-device-width: 568px) and (orientation: portrait) {
+      .footer {
+        width: 96%;
+        background-color: darkcyan;
+        transition: background-color 3s;
+      }
+    }
+  }
