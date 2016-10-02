@@ -23,7 +23,16 @@ ul {
 
 li {
   line-height: 2em;
+  border-radius: 8%;
 }
+
+li:nth-child(2n) {
+  background-color: #fb6;
+}
+li:nth-child(2n+1) {
+  background-color: #fa6;
+}
+
 
 li:hover {
   transform: rotate(5deg);
@@ -44,7 +53,8 @@ li:hover {
     width: $sidebarWidth;
     max-width: $maxWidth * 0.25px;
     padding: $paddingAll;
-    margin: 0;
+    margin: auto;
+    text-align: center;
   }
 
   .maincontent {

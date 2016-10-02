@@ -12,7 +12,14 @@ ul {
   margin-top: 1em; }
 
 li {
-  line-height: 2em; }
+  line-height: 2em;
+  border-radius: 8%; }
+
+li:nth-child(2n) {
+  background-color: #fb6; }
+
+li:nth-child(2n+1) {
+  background-color: #fa6; }
 
 li:hover {
   transform: rotate(5deg);
@@ -31,7 +38,8 @@ li:hover {
     width: 21%;
     max-width: 512px;
     padding: 2%;
-    margin: 0; }
+    margin: auto;
+    text-align: center; }
   .maincointainer .maincontent {
     background-color: lightgreen;
     width: 71%;
